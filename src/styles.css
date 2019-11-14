@@ -1,0 +1,74 @@
+body {
+    background: #eee;
+    padding: 50px
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #aaa;
+    padding: 20px;
+}
+
+.profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+
+.header_author {
+    font-size: 21px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.header_time_ago {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.post_wrapper {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.text_container {
+    padding: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #000
+}
+
+.footer_indicators {
+    display: flex;
+}
+
+.footer_reaction_icon {
+    margin: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer_reaction_icon button {
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 15px;
+    outline: 0;
+
+}
+
+.footer_reaction_icon:hover button {
+    cursor: pointer;
+    background: #ccc;
+}
+
+
+
+.footer_icon {
+    width: 35px;
+    height: 30px;
+}
