@@ -40,6 +40,7 @@ export default class App extends React.Component {
 			]
 		};
 	}
+
 	render() {
 		const updateLike = (index) => {
 			const array = this.state.posts;
@@ -55,21 +56,19 @@ export default class App extends React.Component {
 
 		return (
 			<div>
-				{this.state.posts.map((post, index) => {
-					return (
-						<Post
-							picture={post.picture}
-							author={post.author}
-							time={post.time}
-							text={post.text}
-							likes={post.likes}
-							shares={post.shares}
-							likeClick={() => updateLike(index)}
-							shareClick={() => updateShare(index)}
-							key={index}
-						/>
-					);
-				})}
+				{this.state.posts.map((post, index) => (
+					<Post
+						picture={post.picture}
+						author={post.author}
+						time={post.time}
+						text={post.text}
+						likes={post.likes}
+						shares={post.shares}
+						likeClick={() => updateLike(index)}
+						shareClick={() => updateShare(index)}
+						key={index}
+					/>
+				))}
 			</div>
 		);
 	}
